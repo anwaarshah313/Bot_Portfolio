@@ -1,0 +1,43 @@
+
+.mainOut{
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, black ,rgba(255, 255, 255, 0),  black );
+  z-index: 99;
+}
+
+.embla {
+    overflow: hidden;
+    width: calc(100% - 100px);
+    max-width: 1400px;
+    z-index: -1;
+    
+  }
+  .embla__container {
+    display: flex;
+    animation: loopAnimation 10s linear infinite;
+  }
+  
+
+  
+  @keyframes loopAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .embla__slide {
+    padding: 0px 4px;
+    flex: 0 0 20%;
+    min-width: 0;
+    
+  }
+
+  .embla__slide h4{
+    background-color: rgb(7, 23, 53);
+    text-align: center;
+    padding: 30px  0px;
+  }
+  

@@ -52,11 +52,14 @@ export default function Navbar() {
                                 Contact Us
                             </Link>
                         </li>
-                    </ul>
-                </div>
-                <button className={styles['demo-btn']}>
+                        <button className={styles['demo-btn']}>
                     Demo
                 </button>
+                    </ul>
+                </div>
+                {/* <button className={styles['demo-btn']}>
+                    Demo
+                </button> */}
                 <button onClick={toggle} className={styles['navbar-toggler']}>
                     {isOpen ? "X" : "☰"}
                 </button>

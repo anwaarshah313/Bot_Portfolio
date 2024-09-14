@@ -3,6 +3,7 @@
 
 import { useEffect } from "react";
 import Hero from "./components/home/hero/Hero";
+import Carousel from "./components/home/carousel/Carousel";
 
 export default function Home() {
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function Home() {
   return (
     <div>
       <Hero/>
+      <Carousel/>
       </div>
   );
 }
